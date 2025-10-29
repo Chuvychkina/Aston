@@ -13,6 +13,8 @@
   <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <junit.version>5.10.3</junit.version>
+      <selenium.version>4.36.0</selenium.version>
+      <webdrivermanager.version>5.9.2</webdrivermanager.version>
   </properties>
 
   <dependencies>
@@ -34,6 +36,18 @@
           <groupId>org.junit.jupiter</groupId>
           <artifactId>junit-jupiter</artifactId>
           <version>${junit.version}</version>
+          <scope>test</scope>
+      </dependency>
+      <!-- Selenium WebDriver -->
+      <dependency>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-java</artifactId>
+          <version>${selenium.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>io.github.bonigarcia</groupId>
+          <artifactId>webdrivermanager</artifactId>
+          <version>${webdrivermanager.version}</version>
           <scope>test</scope>
       </dependency>
   </dependencies>
